@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>My first website</title>
+</head>
+<body>
+    <audio controls autoplay loop src="Prettiest to me.mp3">
+        <source src="Prettiest to me.mp3">
+        <source src="Prettiest to me.mp3">
+        This browser does not support HTML5 audio
+    </audio>
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Cila.</strong>
+                        <p>
+                            Hi there! Happy Birthday yaa!!! Aku bangga sama kamu karena kamu
+                            bisa berhasil sampe sini. U're doing a great job. I love you 3000
+                            Semangat kerjanyaa cantikk buat besok besok. Have a         wonderfull dayy
+                            Love you
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+    </script>
+</body>
+</html>
